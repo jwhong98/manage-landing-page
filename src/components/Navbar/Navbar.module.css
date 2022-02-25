@@ -5,9 +5,8 @@
   align-items: center;
   justify-content: center;
   background: transparent;
-  position: sticky;
-  top: 0;
   z-index: 999;
+  padding: 0 20px;
 }
 
 .navContainer {
