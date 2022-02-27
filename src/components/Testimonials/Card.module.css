@@ -1,0 +1,29 @@
+.card {
+  max-width: 510px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 25px;
+  background-color: hsl(0, 0%, 98%);
+  position: relative;
+}
+
+.profile {
+  position: absolute;
+  width: 5rem;
+  top: -45px;
+}
+
+.name {
+  margin-top: 30px;
+  color: hsl(228, 39%, 23%);
+  font-weight: 700;
+}
+
+.review {
+  text-align: center;
+  color: hsl(227, 12%, 61%);
+  line-height: 1.5;
+}
