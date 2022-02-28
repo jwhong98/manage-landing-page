@@ -16,7 +16,7 @@ const Testimonials = () => {
     );
   };
   return (
-    <section>
+    <section className={classes.testimonial}>
       <div className={classes.testimonialContainer}>
         <h1>What they've said</h1>
         <div className={classes.testimonialWrap}>{data.map(createCard)}</div>
