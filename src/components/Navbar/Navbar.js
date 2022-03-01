@@ -2,6 +2,7 @@ import React from "react";
 import classes from "./Navbar.module.css";
 import logo from "../../images/logo.svg";
 import Button from "../Button/Button";
+import hamburger from "../../images/icon-hamburger.svg";
 
 const Navbar = () => {
   return (
@@ -11,7 +12,7 @@ const Navbar = () => {
           <img src={logo} alt="logo" />
         </a>
         <div className={classes.mobileIconContainer}>
-          <img className={classes.mobileIcon} src="" alt="" />
+          <img className={classes.mobileIcon} src={hamburger} alt="" />
         </div>
         <ul className={classes.navMenu}>
           <li className={classes.navItem}>Pricing</li>

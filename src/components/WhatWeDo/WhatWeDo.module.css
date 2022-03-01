@@ -1,5 +1,5 @@
 .what {
-  padding: 50px 0;
+  padding: 25px 20px;
 }
 .whatContainer {
   width: 100%;
@@ -7,7 +7,7 @@
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  justify-content: center;
+  justify-items: center;
   gap: 5rem;
 }
 
@@ -22,12 +22,14 @@
 .textWrap h2 {
   font-size: 2.25rem;
   color: hsl(228, 39%, 23%);
+  font-weight: 700;
 }
 
 .textWrap p {
   max-width: 350px;
   line-height: 1.5;
   color: hsl(227, 12%, 61%);
+  margin: 0;
 }
 
 .list {
@@ -39,4 +41,31 @@
   align-items: center;
   justify-content: center;
   gap: 2rem;
+}
+
+@media screen and (max-width: 902px) {
+  .whatContainer {
+    grid-template-columns: 1fr;
+  }
+
+  .textWrap {
+    max-width: 420px;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .textWrap h2 {
+    font-size: 2rem;
+  }
+
+  .textWrap p {
+    line-height: 2;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .what {
+    padding-right: 0;
+  }
 }

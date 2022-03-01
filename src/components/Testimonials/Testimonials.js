@@ -3,6 +3,7 @@ import Button from "../Button/Button";
 import classes from "./Testimonials.module.css";
 import { data } from "./data";
 import Card from "./Card";
+import Carousel from "./Carousel";
 
 const Testimonials = () => {
   const createCard = (info) => {
@@ -20,6 +21,7 @@ const Testimonials = () => {
       <div className={classes.testimonialContainer}>
         <h1>What they've said</h1>
         <div className={classes.testimonialWrap}>{data.map(createCard)}</div>
+        <Carousel />
         <Button />
       </div>
     </section>

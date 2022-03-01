@@ -2,7 +2,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 50px 0;
+  padding: 50px 20px;
   background-color: hsl(233, 12%, 13%);
   color: #fff;
 }
@@ -28,6 +28,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
   gap: 1rem;
 }
 
@@ -44,4 +45,40 @@ footer {
   bottom: 0;
   right: 0;
   color: hsl(227, 12%, 61%);
+}
+
+@media screen and (max-width: 810px) {
+  .footerContainer {
+    flex-direction: column-reverse;
+    gap: 3rem;
+  }
+  .social {
+    flex-direction: column-reverse;
+    width: 90%;
+    align-items: center;
+  }
+
+  .logo {
+    width: 12rem;
+    margin-bottom: 1rem;
+  }
+
+  .socialWrap {
+    justify-content: space-around;
+  }
+
+  /* .socialWrap svg {
+    width: 100%;
+    height: auto;
+  }
+
+  .socialWrap svg path {
+    width: 100%;
+  } */
+
+  .legal {
+    bottom: -50px;
+    right: auto;
+    left: auto;
+  }
 }

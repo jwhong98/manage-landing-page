@@ -19,12 +19,16 @@
   background: transparent;
   margin: 0 auto;
   z-index: 1;
-  /* padding: 0 20px; */
+  position: relative;
 }
 
 #navLogo {
   width: 100%;
   height: auto;
+}
+
+.mobileIconContainer {
+  display: none;
 }
 
 .navMenu {
@@ -47,4 +51,23 @@
 
 .navItem:hover {
   opacity: 0.5;
+}
+
+@media screen and (max-width: 846px) {
+  #nav Button {
+    display: none;
+  }
+
+  .navContainer {
+  }
+
+  .mobileIconContainer {
+    position: absolute;
+    display: block;
+    right: 0;
+  }
+
+  .navMenu {
+    display: none;
+  }
 }

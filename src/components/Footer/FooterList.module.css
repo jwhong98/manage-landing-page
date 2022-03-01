@@ -5,8 +5,8 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  height: 130px;
-  width: 550px;
+  height: 150px;
+  width: 450px;
   gap: 1rem;
 }
 
@@ -17,4 +17,14 @@
 
 .list li:hover {
   color: hsl(12, 88%, 59%);
+}
+
+@media screen and (max-width: 1054px) {
+  .list {
+    max-width: 80%;
+    align-items: center;
+  }
+  .list li {
+    width: 150px;
+  }
 }

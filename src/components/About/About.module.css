@@ -1,5 +1,8 @@
 .about {
   padding: 75px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .aboutContainer {
@@ -25,10 +28,47 @@
 .textWrap h1 {
   font-size: 3rem;
   color: hsl(228, 39%, 23%);
+  font-weight: 700;
 }
 
 .textWrap p {
   line-height: 1.5;
   max-width: 350px;
   color: hsl(227, 12%, 61%);
+}
+
+.imgWrap {
+  display: flex;
+}
+
+.imgWrap img {
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 1064px) {
+  .aboutContainer {
+    gap: 3rem;
+  }
+}
+
+@media screen and (max-width: 902px) {
+  .about {
+    padding-top: 0;
+  }
+  .aboutContainer {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    justify-items: center;
+  }
+  .textWrap {
+    max-width: 420px;
+    grid-row: 2/3;
+    align-items: center;
+    text-align: center;
+    gap: 0.25rem;
+  }
+  .textWrap h1 {
+    font-size: 2.25rem;
+  }
 }
