@@ -3,7 +3,7 @@ footer {
   align-items: center;
   justify-content: center;
   padding: 50px 0;
-  background-color: hsl(228, 39%, 23%);
+  background-color: hsl(233, 12%, 13%);
   color: #fff;
 }
 
@@ -29,6 +29,14 @@ footer {
   align-items: center;
   justify-content: center;
   gap: 1rem;
+}
+
+.socialWrap svg {
+  cursor: pointer;
+}
+
+.socialWrap svg:hover path {
+  fill: #f25f3a;
 }
 
 .legal {

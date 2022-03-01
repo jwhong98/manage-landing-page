@@ -5,7 +5,9 @@ const Input = () => {
   return (
     <form action="" className={classes.form}>
       <input type="text" placeholder="Updates in your inbox..." />
-      <button>Go</button>
+      <div className={classes.formButton}>
+        <button>Go</button>
+      </div>
     </form>
   );
 };

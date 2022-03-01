@@ -14,10 +14,21 @@
   width: 200px;
 }
 
-.form button {
+.formButton {
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+.formButton button {
   color: #fff;
   padding: 10px 15px;
   background-color: hsl(12, 88%, 59%);
   border-radius: 20px;
   border: none;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.form button:hover {
+  opacity: 0.7;
 }

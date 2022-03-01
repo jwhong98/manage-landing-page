@@ -12,4 +12,9 @@
 
 .list li {
   text-transform: capitalize;
+  cursor: pointer;
+}
+
+.list li:hover {
+  color: hsl(12, 88%, 59%);
 }
